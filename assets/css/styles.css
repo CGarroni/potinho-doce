@@ -114,3 +114,10 @@ header {
 main {
   padding-top: 100px;
 }
+
+.container-hero {
+  align-items: center;
+  background: linear-gradient(135deg, #b19cd9, #c8a2c8, #dda0dd);
+  display: flex;
+  min-height: 100vh;
+}
