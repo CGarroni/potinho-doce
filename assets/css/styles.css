@@ -64,27 +64,23 @@ header {
   align-items: center;
 }
 
-.order-btn button {
+.button-like {
   background-color: #25D366;
   padding: .625rem 1rem;
   border: none;
   border-radius: 40px;
 }
 
-.order-btn:hover button {
-  background-color: #8b4513;
-  transition: 1s;
-}
-
-.order-btn button a {
+.button-like  {
   text-decoration: none;
   color: #fff;;
   font-size: 1rem;
   font-weight: 700;
 }
 
-.nav-item a:hover {
-  color: #8b4513;
+.button-like:hover {
+  background-color: #8b4513;
+  color: #25D366;
   transition: .8s;
 }
 
