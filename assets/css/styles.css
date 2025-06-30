@@ -7,6 +7,7 @@
 
   /* Cores funcionais */
   --color-whatsapp-green: #25d366;
+  --color-whatsapp-green-medium: #128c7e;
   --color-text-dark: #333;
   --color-text-light: #fff;
   --color-background-light: #f7f7f7;
@@ -16,6 +17,7 @@
   /* Cores de destaque*/
   --color-highlight-pink: #ff69b4;
   --color-highlight-gold: #ffd700;
+  --color-highlight-gold-light: #ffed4e;
 
   /* Fontes */
   --font-poppins: "Poppins", sans-serif;
@@ -196,8 +198,18 @@ main {
   color: var(--color-text-dark);
 }
 
-.btn-secondary {
+.btn-primary:hover {
+  background: var(--color-highlight-gold-light);
+  transform: translateY(-2px);
+}
+
+.btn-secondary:hover {
   background: var(--color-whatsapp-green);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--color-whatsapp-green-medium);
   color: var(--color-text-light);
 }
 
@@ -208,5 +220,14 @@ main {
 .hero-img {
   max-width: 100%;
   height: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hero-img:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  filter: brightness(1.03);
 }
 
