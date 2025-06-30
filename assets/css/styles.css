@@ -42,6 +42,7 @@ header {
   top: 0;
   background: linear-gradient(135deg, var(--color-brand-light-purple), var(--color-brand-lilac));
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 .nav-bar {
