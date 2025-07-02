@@ -119,7 +119,7 @@ header {
 }
 
 .button-like {
-  background-color: var(--color-whatsapp-green);
+  background-color: var(--color-whatsapp-green-medium);
   padding: .625rem 1rem;
   border: none;
   border-radius: 40px;
@@ -261,3 +261,119 @@ main {
   filter: brightness(1.03);
 }
 
+.our-flavors {
+  padding: 5rem 0;
+  background-color: var(--color-background-light);
+  text-align: center;
+}
+
+.our-flavors .container-cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.our-flavors .section-title {
+  font-size: 2.8rem;
+  color: var(--color-brown-medium);
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: var(--color-text-dark);
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+}
+
+.flavor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-item {
+  background-color: var(--color-text-light);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.flavor-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid var(--color-brand-cream);
+}
+
+.card-item h3 {
+  font-size: 1.8rem;
+  color: var(--color-brand-pink);
+  margin-bottom: 0.5rem;
+}
+
+.card-item p:not(.flavor-price) {
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.flavor-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-brown-medium);
+  margin-bottom: 1.5rem;
+}
+
+.btn-whatsapp-order {
+  background-color: var(--color-whatsapp-green-medium);
+  color: var(--color-background-light);
+  padding: .75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  margin-top: auto;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  justify-content: center;
+}
+
+.btn-whatsapp-order:hover {
+  background-color: var(--color-whatsapp-green);
+  transform: translateY(-2px);
+}
+
+.general-cta {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 4rem;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  width: 30%;
+  text-decoration: none;
+}
