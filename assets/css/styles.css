@@ -37,7 +37,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 128px;
+  scroll-padding-top: 50px;
 }
 
 body {
@@ -736,6 +736,14 @@ main {
 .footer-contact {
   flex: 1;
   min-width: 200px;
+}
+
+.footer-contact a {
+  align-items: center;
+  color: var(--color-brand-cream);
+  display: flex;
+  gap: 8px;
+  text-decoration: none;
 }
 
 .footer-contact p {
