@@ -40,6 +40,12 @@ html {
   scroll-padding-top: 50px;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  html {
+    scroll-padding-top: 80px;
+  }
+}
+
 body {
   background-color: var(--color-background-light);
   color: var(--color-text-dark);

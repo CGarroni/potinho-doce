@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			if (target) {
 				const header = document.querySelector("header");
 				const headerHeight = header.offsetHeight;
-				const targetPosition = target.offsetTop - headerHeight;
+				const targetPosition = target.offsetTop - headerHeight - 10;
 				window.scrollTo({
 					top: targetPosition,
 					behavior: "smooth",
